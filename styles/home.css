@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  height: max-content;
+  gap: 1rem;
+}
+
+
+/* Main Section CSS */
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  padding: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/agh.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.heroTitle {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  font-size: 12rem;
+  text-align: center;
+  letter-spacing:-18px;
+}
+.titleSpan{
+    background-color: #E95420;
+    color: white;
+    text-shadow: -10px 10px 4px black;
+}
+
+#nameTitle{
+    font-weight:300;
+}
+#heroBtn{
+    padding: 15px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    color: black;
+    width: 10vw;
+    cursor: pointer;
+}
+#heroBtn:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+
+
+@media screen and (max-width:925px){
+    .heroTitle{
+        font-size: 9rem;
+    }
+}
+
+
+@media screen and (max-width:704px){
+    .heroTitle{
+        font-size: 7rem;
+        
+    }
+    #heroBtn{
+        width: 15vw;
+    }
+}
+@media screen and (max-width: 625px) {
+  .heroTitle{
+        font-size: 6rem;
+    }
+    #heroBtn{
+        width: 20vw;
+    }
+}
+@media screen and (max-width: 455px) {
+  .heroTitle{
+        font-size: 6rem;
+    }
+    #heroBtn{
+        width: 25vw;
+    }
+}
+@media screen and (max-width:430px) {
+    .heroTitle{
+        font-size: 5rem;
+    }
+}

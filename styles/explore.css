@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  height: max-content;
+  gap: 1rem;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100vw;
+}
+.exploreHeroContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 2rem;
+  background-image: url('../images/bg3.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.exploreTitleContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+#nameFeed{
+    font-weight:300;
+}
+.titleSpan{
+    background-color: #9112BC;
+    text-shadow: -10px 10px 4px black;
+    color: white;
+    animation: slideIn 3s ease-in-out infinite alternate;
+}
+.heroFeed{
+  font-size: 10rem;
+  letter-spacing:-18px;
+  text-align: center;
+}
+#searchInput{
+  width: 25vw;
+  align-self: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 7px 7px 10px #9112BC;
+  border: 1px solid black;
+}
+
+/* Feed Segment */
+.feedContainer{
+  margin-top: 6rem;
+  display: flex;
+  gap: 4rem;
+
+}
+.feedSection{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 60vw;
+}
+.feedNavbar{
+  display: flex;
+  gap: 1rem;
+  padding: 10px;
+  font-size: 0.9rem;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-weight: 200;
+  border-bottom: 1px solid #9112BC;
+  width: max-content;
+  align-self: center;
+}
+.feedNavbar>a:hover{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: #9112BC;
+  cursor: pointer;
+}
+.postSection{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+align-items: center;
+padding: 1rem;
+}
+.card{
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+  width: 60%;
+  border-radius: 7px;
+}
+.cardImgName{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.cardImg{
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.cardContent{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.cardText{
+  font-weight: 300;
+  font-size: 0.8rem;
+  text-align:left;
+}
+.subscribeSection{
+   position: sticky;
+  top: 0;
+  width: 40vw;
+  height: max-content;
+  
+}
+.createPostContainer,.followContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.5rem;
+  
+  
+  width: 40vw;
+}
+.shareText{
+  font-size: 5rem;
+  text-align: left;
+}
+.shareSpan{
+    color: white;
+    text-shadow: -10px 10px 4px black;
+    background-color: #9112BC;
+}
+.createBtn{
+  width: 40%;
+  align-self: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 7px;
+}
+.followContainer{
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.followSmContainer{
+  padding: 10px;
+  display: flex;
+  gap: 1rem;
+}
+.smIcon{
+  cursor: pointer;
+}
+.smIcon:hover{
+  
+  transform: translateY(-1rem);
+}
+@keyframes slideIn {
+            from {
+                transform: translateY(-100%); /* Start off-screen to the left */
+            }
+            to {
+                transform: translateY(0); /* End at its natural position */
+            }
+        }
+@media screen and (max-width:1365px) {
+  .shareText{
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width:1180px){
+    .heroFeed{
+        font-size: 9rem;
+    }
+    .cardText{
+      font-size: 0.6rem;
+    }
+    .cardName{
+      font-size: 0.9rem;
+    }
+    .shareText{
+      font-size: 3.5rem;
+    }
+    .followText{
+      font-size: 0.9rem;
+    }
+}
+
+
+@media screen and (max-width:1006px){
+    .heroFeed{
+        font-size: 7rem;
+        
+    }
+    .shareText{
+      font-size: 3rem;
+    }
+    .followText{
+      font-size: 0.8rem;
+    }
+    .feedNavbar{
+      font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 891px) {
+  .shareText{
+    font-size: 2.5rem;
+  }
+  .card{
+    width: 70%;
+  }
+}
+@media screen and (max-width:786px) {
+  .feedContainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .feedSection{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    align-self: center;
+    width: 75%;
+    padding: 0.3rem;
+  }
+  .cardText{
+    font-size: 0.7rem;
+    font-weight: 250;
+    align-self: center;
+  }
+  .subscribeSection{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .shareText{
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: -5px;
+  }
+  .createPostContainer{
+    width: inherit;
+  }
+  .followContainer{
+    width: 100%;
+  }
+  .feedNavbar{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 741px) {
+  .heroFeed{
+        font-size: 6rem;
+    }
+}
+@media screen and (max-width: 615px) {
+  .heroFeed{
+        font-size: 5rem;
+    }
+  
+}
+@media screen and (max-width:455px) {
+    .heroFeed{
+        font-size: 3rem;
+        letter-spacing: -6px;
+    }
+    .feedNavbar{
+      font-size: 0.7rem;
+    }
+}
