@@ -13,3 +13,35 @@ body {
   height: max-content;
   gap: 1rem;
 }
+.contactHeroContainer{
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  background-image: url("../images/contactbg.png");
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-direction:row-reverse;
+}
+.contactTextContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  width: max-content;
+}
+#contactFeed{
+font-weight:300;
+}
+.heroFeed{
+  font-size: 10rem;
+  letter-spacing:-18px;
+  text-align: center;
+}
+.titleSpan{
+    background-color: #0090ff;
+    text-shadow: -10px 10px 4px black;
+    color: white;
+    animation: slideIn 3s ease-in-out infinite alternate;
+}
