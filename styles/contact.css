@@ -30,6 +30,10 @@ body {
   padding: 1rem;
   align-items: center;
   width: max-content;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+  align-self: center;
 }
 #contactFeed{
 font-weight:300;
