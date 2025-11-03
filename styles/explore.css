@@ -118,7 +118,6 @@ padding: 1rem;
 }
 .cardText{
   font-weight: 200;
-  letter-spacing: 0.5px;
   font-size: 1rem;
   text-align:left;
 }
@@ -200,6 +199,9 @@ padding: 1rem;
     .followText{
       font-size: 0.9rem;
     }
+    #searchInput{
+      width: 30vw;
+    }
 }
 
 
@@ -225,6 +227,9 @@ padding: 1rem;
   .card{
     width: 70%;
   }
+  #searchInput{
+      width: 40vw;
+    }
 }
 @media screen and (max-width:786px) {
   .feedContainer{
@@ -271,6 +276,9 @@ padding: 1rem;
   .heroFeed{
         font-size: 6rem;
     }
+    #searchInput{
+      width: 50vw;
+    }
 }
 @media screen and (max-width: 615px) {
   .heroFeed{
@@ -294,5 +302,15 @@ padding: 1rem;
     }
     .cardText{
       font-size: 0.8rem;
+    }
+    .heroFeed{
+        font-size:3rem;
+        letter-spacing: -6px;
+    }
+    #nameFeed{
+      font-size: 1rem;
+    }
+    #searchInput{
+      width: 55vw;
     }
 }
