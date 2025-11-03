@@ -35,8 +35,6 @@ main{
   gap: 3rem;
   justify-content: center;
   align-items: center;
-  
-
 }
 #nameFeed{
     font-weight:300;
@@ -63,10 +61,8 @@ main{
 
 /* Feed Segment */
 .feedContainer{
-  margin-top: 6rem;
   display: flex;
   gap: 4rem;
-
 }
 .feedSection{
   display: flex;
@@ -121,8 +117,9 @@ padding: 1rem;
   padding: 5px;
 }
 .cardText{
-  font-weight: 300;
-  font-size: 0.8rem;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
   text-align:left;
 }
 .subscribeSection{
@@ -282,11 +279,20 @@ padding: 1rem;
   
 }
 @media screen and (max-width:455px) {
+  main{
+    gap: 0.5rem;
+  }
     .heroFeed{
         font-size: 3rem;
         letter-spacing: -6px;
     }
     .feedNavbar{
       font-size: 0.7rem;
+    }
+    .card{
+      width: 90%;
+    }
+    .cardText{
+      font-size: 0.8rem;
     }
 }
