@@ -20,7 +20,7 @@ body {
   background-image: url("../images/contactbg.png");
   height: 80vh;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size:contain;
   flex-direction:row-reverse;
 }
 .contactTextContainer{
@@ -44,8 +44,21 @@ font-weight:300;
   text-align: center;
 }
 .titleSpan{
-    background-color: #0090ff;
+    background-color: #bf1363;
     text-shadow: -10px 10px 4px black;
     color: white;
     animation: slideIn 3s ease-in-out infinite alternate;
+}
+#emailBtn{
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  width: 10vw;
+  cursor: pointer;
+  border: 2px solid black;
+}
+@media screen and (max-width : ){
+
+
+
 }
