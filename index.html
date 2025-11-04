@@ -5,23 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>byPeople</title>
     <link rel="stylesheet" href="./styles/home.css" />
-    <link rel="stylesheet" href="./styles/navbar.css">
-   
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav>
       <div class="navItemContainer">
-        <a href="./index.html">home</a>
-        <a href="./explore.html">explore</a>
+        <a style="text-decoration: none; color: black" href="./index.html"
+          >home</a
+        >
+        <a style="text-decoration: none; color: black" href="./explore.html"
+          >explore</a
+        >
       </div>
       <a href="./home.html">
         <img id="websiteLogo" src="./images/logo.png" alt="logo"
       /></a>
       <div class="navItemContainer">
-        <a href="./contact.html">contact</a>
-        <a href="">about</a>
+        <a style="text-decoration: none; color: black" href="./contact.html"
+          >contact</a
+        >
+        <a style="text-decoration: none; color: black" href="">about</a>
         <div>
-          <a href=""
+          <a style="text-decoration: none; color: black" href=""
             ><img id="loginIcon" src="./images/login.png" alt="login"
           /></a>
           <a href=""><button id="navBtn">sign in</button></a>
@@ -29,29 +45,113 @@
       </div>
     </nav>
     <main>
-        <div class="heroContainer">
-            <h1 id="nameTitle">Kanishk Malik</h1>
-            <h1 class="heroTitle"><span class="titleSpan">U</span>ESI<span class="titleSpan">G</span>NER </h1>
-            <h1 class="heroTitle">FR<span class="titleSpan">EE</span>LAN<span class="titleSpan">C</span>E</h1>
-            <button id="heroBtn">DIVE IN</button>
+      <div class="heroContainer">
+        <h1 id="nameTitle">Kanishk Malik</h1>
+        <h1 class="heroTitle">
+          <span class="titleSpan">U</span>ESI<span class="titleSpan">G</span>NER
+        </h1>
+        <h1 class="heroTitle">
+          FR<span class="titleSpan">EE</span>LAN<span class="titleSpan">C</span
+          >E
+        </h1>
+        <button id="heroBtn">DIVE IN</button>
+      </div>
+      <div class="carContainer">
+
+     
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./images/m.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/n.jpeg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/o.jpg" class="d-block w-100" alt="..." />
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+         <div class="carText">
+         <p class="cText">wanna share some thoughts?</p>   
+          <button>Write</button>
+        </div>
+      </div>
     </main>
     <footer>
-        <div class="col">
-            <div class="gcContainer">
-                <p class="gc">MADE BY</p>
-                <p class="gc name">KANISHK MALIK</p>
-                <p class="gc name">CHEEKATI GANESH</p>
-                <p class="gc name">AARUSHI GARG</p>
-             </div>
-             <h1 id="copyright">COPYRIGHT © 2025</h1>
+      <div class="col1">
+        <div class="gcContainer">
+          <p class="gc">MADE BY</p>
+          <p class="gc name">KANISHK MALIK</p>
+          <p class="gc name">CHEEKATI GANESH</p>
+          <p class="gc name">AARUSHI GARG</p>
         </div>
-        <div class="smContainer">
-        <a class="smTags" style=" font-weight: lighter;cursor: pointer;">FACEBOOK <span style="font-weight: bolder;">/</span></a>
-        <a class="smTags" style=" font-weight: lighter;cursor: pointer;">INSTAGRAM <span style="font-weight: bolder;">/</span></a>
-        <a class="smTags" style=" font-weight: lighter;cursor: pointer;">LINKEDiN <span style="font-weight: bolder;">/</span></a>
-        <a class="smTags" style=" font-weight: lighter;cursor: pointer;">TWITTER</a>
-        </div>
+        <h1 id="copyright">COPYRIGHT © 2025</h1>
+      </div>
+      <div class="smContainer">
+        <a
+          class="smTags"
+          style="
+            text-decoration: none;
+            color: black;
+            font-weight: lighter;
+            cursor: pointer;
+          "
+          >FACEBOOK <span style="font-weight: bolder">/</span></a
+        >
+        <a
+          class="smTags"
+          style="
+            text-decoration: none;
+            color: black;
+            font-weight: lighter;
+            cursor: pointer;
+          "
+          >INSTAGRAM <span style="font-weight: bolder">/</span></a
+        >
+        <a
+          class="smTags"
+          style="
+            text-decoration: none;
+            color: black;
+            font-weight: lighter;
+            cursor: pointer;
+          "
+          >LINKEDiN <span style="font-weight: bolder">/</span></a
+        >
+        <a
+          class="smTags"
+          style="
+            text-decoration: none;
+            color: black;
+            font-weight: lighter;
+            cursor: pointer;
+          "
+          >TWITTER</a
+        >
+      </div>
     </footer>
   </body>
 </html>
