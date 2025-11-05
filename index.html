@@ -17,6 +17,91 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <style>
+      .popup-container {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  position: relative;
+  animation: popupIn 0.3s ease-out;
+}
+
+.popup-form h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.popup-form label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.popup-form input,
+.popup-form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.4rem 0 1rem 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.popup-form button {
+  background-color: #E95420;
+  color: white;
+  padding: 0.8rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+@keyframes popupIn {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Blur Effect */
+.blur {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+    </style>
   </head>
   <body>
     <nav>
@@ -28,7 +113,7 @@
           >explore</a
         >
       </div>
-      <a href="./home.html">
+      <a href="./index.html">
         <img id="websiteLogo" src="./images/logo.png" alt="logo"
       /></a>
       <div class="navItemContainer">
@@ -96,7 +181,7 @@
       </div>
          <div class="carText">
          <p class="cText">wanna share some thoughts?</p>   
-          <button>Write</button>
+          <button id="writeBtn">Write</button>
         </div>
       </div>
     </main>
@@ -153,5 +238,45 @@
         >
       </div>
     </footer>
+    <div id="contactPopup" class="popup-container">
+  <div class="popup-form">
+    <span id="closePopup" class="close-btn">&times;</span>
+    <h2>WRITE YOUR TWEET</h2>
+    <form>
+     <div class="cardImgName">
+                  <img
+                    class="cardImg"
+                    width="30"
+                    height="30"
+                    src="./images/bg3.png"
+                    alt="cardImg"
+                  />
+                  <p class="cardName">KANISHK MALIK</p>
+      </div>
+      <textarea rows="4" placeholder="Type your message..." required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+<script>
+  const emailBtn = document.getElementById('writeBtn');
+  const popup = document.getElementById('contactPopup');
+  const closeBtn = document.getElementById('closePopup');
+  const mainContent = document.querySelector('main');
+
+  emailBtn.addEventListener('click', () => {
+    popup.style.display = 'flex';
+    mainContent.classList.add('blur');
+    document.querySelector('nav').classList.add('blur');
+    document.querySelector('footer').classList.add('blur');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+    mainContent.classList.remove('blur');
+    document.querySelector('nav').classList.remove('blur');
+    document.querySelector('footer').classList.remove('blur');
+  });
+</script>
   </body>
 </html>

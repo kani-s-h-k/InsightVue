@@ -146,12 +146,18 @@ padding: 1rem;
     text-shadow: -10px 10px 4px black;
     background-color: #9112BC;
 }
-.createBtn{
+#createBtn{
   width: 40%;
   align-self: center;
   background-color: white;
   padding: 10px;
   border-radius: 7px;
+}
+#createBtn:hover{
+  background-color: #9112BC;
+  color: white;
+  cursor: pointer;
+  border: none;
 }
 .followContainer{
   justify-content: center;
