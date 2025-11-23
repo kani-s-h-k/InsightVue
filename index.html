@@ -95,7 +95,6 @@
   }
 }
 
-/* Blur Effect */
 .blur {
   filter: blur(5px);
   pointer-events: none;
@@ -129,6 +128,17 @@
         </div>
       </div>
     </nav>
+<div id="authModal" class="authOverlay">
+  <div class="authBox">
+    <span id="authCloseBtn">&times;</span>
+    <h2>Login</h2>
+    <input type="text" placeholder="Email" />
+    <input type="password" placeholder="Password" />
+    <button id="authSubmitBtn">Login</button>
+  </div>
+</div>
+
+
     <main>
       <div class="heroContainer">
         <h1 id="nameTitle">Kanishk Malik</h1>
@@ -258,25 +268,7 @@
     </form>
   </div>
 </div>
-<script>
-  const emailBtn = document.getElementById('writeBtn');
-  const popup = document.getElementById('contactPopup');
-  const closeBtn = document.getElementById('closePopup');
-  const mainContent = document.querySelector('main');
-
-  emailBtn.addEventListener('click', () => {
-    popup.style.display = 'flex';
-    mainContent.classList.add('blur');
-    document.querySelector('nav').classList.add('blur');
-    document.querySelector('footer').classList.add('blur');
-  });
-
-  closeBtn.addEventListener('click', () => {
-    popup.style.display = 'none';
-    mainContent.classList.remove('blur');
-    document.querySelector('nav').classList.remove('blur');
-    document.querySelector('footer').classList.remove('blur');
-  });
-</script>
+<script src="./scripts/home.js"></script>
+<script src="./scripts/sign.js"></script>
   </body>
 </html>
